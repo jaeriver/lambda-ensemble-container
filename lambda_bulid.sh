@@ -1,6 +1,6 @@
 sudo service docker restart
 
-docker build -t jg-lambda-image-container . --no-cache
+docker build -t jg-lambda-ensemble-image . --no-cache
 
 export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 
